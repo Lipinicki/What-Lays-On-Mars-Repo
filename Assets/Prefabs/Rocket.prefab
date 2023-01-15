@@ -3086,7 +3086,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e08026f88bdca3e4a8f74f71b2ee349c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrustForce: 1000
+  thrustForce: 1500
   rotationForce: 100
   thrustEngineSound: {fileID: 8300000, guid: 9a412b6ce970e6642842afeb7a9fa1ef, type: 3}
   bodyThrustParticles: {fileID: 7870074031211231220}
