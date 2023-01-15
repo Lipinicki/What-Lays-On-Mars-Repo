@@ -6,8 +6,12 @@ using UnityEngine.SceneManagement;
 public class CollisionHandler : MonoBehaviour
 {
 	[SerializeField] float delayToLoadScene = 0;
+
 	[SerializeField] AudioClip crashSound = null;
 	[SerializeField] AudioClip successSound = null;
+
+	[SerializeField] ParticleSystem crashParticles = null;
+	[SerializeField] ParticleSystem successParticles = null;
 
 	AudioSource playerAudio;
 
@@ -40,6 +44,7 @@ public class CollisionHandler : MonoBehaviour
 	{
 		isTransitioning = true;
 		playerAudio.Stop();
+		successParticles.Play();
 		playerAudio.PlayOneShot(successSound, 1f);
 		GetComponent<Movement>().enabled = false;
 		Invoke("LoadNextLevel", delayToLoadScene);
@@ -49,6 +54,7 @@ public class CollisionHandler : MonoBehaviour
 	{
 		isTransitioning = true;
 		playerAudio.Stop();
+		crashParticles.Play();
 		playerAudio.PlayOneShot(crashSound, 0.5f);
 		GetComponent<Movement>().enabled = false;
 		Invoke("ReloadLevel", delayToLoadScene);
