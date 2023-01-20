@@ -3505,7 +3505,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6059075687554717808, guid: 19b6d70804e7a5940b247c134f6eac9f, type: 3}
       propertyPath: m_Name
-      value: Moving Obstacle 1 (1)
+      value: Closing Passage 1
       objectReference: {fileID: 0}
     - target: {fileID: 6059075687554717808, guid: 19b6d70804e7a5940b247c134f6eac9f, type: 3}
       propertyPath: m_IsActive
@@ -6918,7 +6918,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6059075687554717808, guid: 19b6d70804e7a5940b247c134f6eac9f, type: 3}
       propertyPath: m_Name
-      value: Moving Obstacle 1
+      value: Closing Passage
       objectReference: {fileID: 0}
     - target: {fileID: 6059075687554717808, guid: 19b6d70804e7a5940b247c134f6eac9f, type: 3}
       propertyPath: m_IsActive
